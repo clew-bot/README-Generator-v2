@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs")
-
+console.log("Hello world");
 const generateMarkdown = require("./utils/generateMarkdown.js");
 const path = require("path");
 // array of questions for user
@@ -50,7 +50,13 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
-
+inquirer.prompt(questions)
+.then((response) => { fs.writeFile("README.md", generateMarkdown({...response}), function(err){
+    if(err){
+        console.log(err)
+    }
+    console.log("Congrats! The file was created!")
+})})
 }
 
 // function call to initialize program
