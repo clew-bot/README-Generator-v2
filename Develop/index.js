@@ -30,9 +30,9 @@ const questions = [
     name: "realUsage",
     message: "What are some real world usage examples for your application?"
 }, {
-    type: "input",
+    type: "list",
     name: "realLicense",
-    message: "What kind of license does this application have?"
+    choices: ["MIT", "IBM", "ISC", "Apache", "None"]
 }, {
     type: "input",
     name: "realContributors",
@@ -44,14 +44,10 @@ const questions = [
 }
 ];
 
-// function to write README file
-function writeToFile(fileName, data) {
-}
-
 // function to initialize program
 function init() {
 inquirer.prompt(questions)
-.then((response) => { fs.writeFile("README.md", generateMarkdown({...response}), function(err){
+.then((response) => { fs.writeFile("READMEg.md", generateMarkdown({...response}), function(err){
     if(err){
         console.log(err)
     }

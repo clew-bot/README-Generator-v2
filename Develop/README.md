@@ -1,15 +1,13 @@
-# Microsoft 2.0
+# README Generator
 ## Description 
-Will make Azure look like a potato.
-## GitHub Name
-undefined
+This Node CLI will prompt you with questions in order to generate a good solid README markdown file. Prompts such as title, Github name, installation process, etc. Markdown will be generated as "READMEg.md".
+
 ## Installation Process
-node install msftclone
+clone on desktop, open file with integrated terminal or bash, and type: node index.js
 ## Real World Usage
-Broad based data centers everywhere
+Program will help create markdowns efficiently without doing too much work. 
 ## Licenses 
-MIT
+None
 ## Contributors
 clew-bot
-## FAQ
-email: fakeemail@deepfakes.com
+

@@ -4,7 +4,7 @@ function generateMarkdown(data) {
 ## Description 
 ${data.realDescription}
 ## GitHub Name
-${data.realGitHubName}
+${data.realGithubName}
 ## Installation Process
 ${data.realInstallation}
 ## Real World Usage
